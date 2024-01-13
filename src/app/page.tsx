@@ -7,12 +7,19 @@ export default function Home() {
       <Link href="/useState" legacyBehavior>
         <a>useState</a>
       </Link>
+      <hr />
       <Link href="/useRef" legacyBehavior>
         <a>useState</a>
       </Link>
+      <hr />
       <Link href="/useReducer" legacyBehavior>
         <a>useReducer</a>
       </Link>
+      <hr />
+      <Link href="/useMemo" legacyBehavior>
+        <a>useMemo</a>
+      </Link>
+      <hr />
     </>
   );
 }
