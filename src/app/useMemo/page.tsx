@@ -21,14 +21,26 @@ const App = () => {
     return count02 * count02;
   }, [count02]);
   return (
-    <>
-      <h1>useMemo</h1>
-      <div>カウント1：{count01}</div>
-      <div>カウント2：{count02}</div>
-      <div>結果：{square}</div>
-      <button onClick={() => setCount01(count01 + 1)}>＋</button>
-      <button onClick={() => setCount02(count02 + 1)}>＋</button>
-    </>
+    <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-2xl font-bold mb-4">useMemo</h1>
+      <div className="mb-4">カウント1：{count01}</div>
+      <div className="mb-4">カウント2：{count02}</div>
+      <div className="mb-4">結果：{square}</div>
+      <div className="flex">
+        <button
+          onClick={() => setCount01(count01 + 1)}
+          className="bg-blue-500 text-white p-2 rounded mr-2"
+        >
+          ＋
+        </button>
+        <button
+          onClick={() => setCount02(count02 + 1)}
+          className="bg-blue-500 text-white p-2 rounded"
+        >
+          ＋
+        </button>
+      </div>
+    </div>
   );
 };
 

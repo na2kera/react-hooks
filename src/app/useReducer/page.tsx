@@ -15,14 +15,25 @@ const reducer = (state: any, action: any) => {
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, 0);
-
   return (
-    <>
-      <h1>useReducer</h1>
-      <p>カウント：{state}</p>
-      <button onClick={() => dispatch({ type: "increment" })}>＋</button>
-      <button onClick={() => dispatch({ type: "decrement" })}>ー</button>
-    </>
+    <div className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-2xl font-bold mb-4">useReducer</h1>
+      <p className="mb-4">カウント：{state}</p>
+      <div className="flex">
+        <button
+          onClick={() => dispatch({ type: "increment" })}
+          className="bg-blue-500 text-white p-2 rounded mr-2"
+        >
+          ＋
+        </button>
+        <button
+          onClick={() => dispatch({ type: "decrement" })}
+          className="bg-blue-500 text-white p-2 rounded"
+        >
+          ー
+        </button>
+      </div>
+    </div>
   );
 };
 
