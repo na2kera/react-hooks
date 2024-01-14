@@ -9,7 +9,7 @@ export default function Home() {
       </Link>
       <hr />
       <Link href="/useRef" legacyBehavior>
-        <a>useState</a>
+        <a>useRef</a>
       </Link>
       <hr />
       <Link href="/useReducer" legacyBehavior>
