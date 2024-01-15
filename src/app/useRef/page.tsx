@@ -8,7 +8,6 @@ const App = () => {
   const handleRef = () => {
     if (ref.current) {
       console.log(ref.current.value);
-      console.log("24:34");
     }
   };
 
